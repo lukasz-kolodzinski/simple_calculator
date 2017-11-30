@@ -19,3 +19,9 @@ def division():
     a = int(input('Type first number '))
     b = int(input('Type second number '))
     print(a / b)
+
+def modulo():
+    a = int(input('Type first number '))
+    b = int(input('Type second number '))
+    print(a % b)
+    
