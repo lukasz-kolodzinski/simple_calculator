@@ -29,4 +29,13 @@ def calculator_start():
     answer = input('Type kind of operation: add, subtract, multiply, divide, modulo: ')
     if answer == 'add':
         addition()
-
+    elif answer == 'subtract':
+        subtraction()
+    elif answer == 'multiply':
+        multiplication()
+    elif answer == 'divide':
+        division()
+    elif answer == 'modulo':
+        modulo()
+    else:
+        print('Function not supported')
