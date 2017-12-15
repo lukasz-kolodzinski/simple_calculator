@@ -1,4 +1,4 @@
-#Simple calculator
+#Simple calculator. Project created to refresh python's basics.
 
 def addition():
     a = int(input('Type first number '))
