@@ -25,8 +25,15 @@ def modulo():
     b = int(input('Type second number '))
     print(a % b)
 
+#global variable
+calculator_on = 1
+
+def quit():
+    global calculator_on
+    calculator_on = 0    
+
 def calculator_start():
-    answer = input('Type kind of operation: add, subtract, multiply, divide, modulo: ')
+    answer = input('Type kind of operation: add, subtract, multiply, divide, modulo or quit: ')
     try:
         if answer == 'add':
             addition()
@@ -39,6 +46,9 @@ def calculator_start():
         elif answer == 'modulo':
             modulo()
         else:
-            print('Function not supported')
+            quit()
     except:
         print('Operation is not allowed')
+
+while calculator_on == 1:
+    calculator_start()
