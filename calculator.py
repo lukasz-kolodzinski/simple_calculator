@@ -25,7 +25,10 @@ def modulo():
     b = int(input('Type second number '))
     print(a % b)
 
-#global variable
+def count_to_ten():
+    for i in range (1, 11):
+        print(i)
+
 calculator_on = 1
 
 def quit():
@@ -33,7 +36,7 @@ def quit():
     calculator_on = 0    
 
 def calculator_start():
-    answer = input('Type kind of operation: add, subtract, multiply, divide, modulo or quit: ')
+    answer = input('Type kind of operation: add, subtract, multiply, divide, modulo, count to 10 or quit: ')
     try:
         if answer == 'add':
             addition()
@@ -45,6 +48,8 @@ def calculator_start():
             division()
         elif answer == 'modulo':
             modulo()
+        elif answer == 'count to 10':
+            count_to_ten()
         else:
             quit()
     except:
